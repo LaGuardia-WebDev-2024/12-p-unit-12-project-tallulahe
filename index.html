@@ -1,112 +1,37 @@
-<!-- Unit 13 Project
+<!-- Unit 11 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
-[  ] Two Different jQuery Animation Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[  ] Three New Arrays
+[  ] One New Loop
+[  ] Custom Function
+[  ] Three new HTML elements/CSS Declarations
 
-Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
-[ no ] Feature 2 - Upload a Font
-[ no ] Feature 3 - .mouseover() Method
-[ no ] Feature 4 - :hover Feature 
-[ no ] Feature 5 - Add an Additional Interactive Drop-down
+Select ONE Additional 
+[ no ] Feature 1 - Array of Colors
+[ no ] Feature 2 - Add to an Array using .push()
+[ no ] Feature 3 - Image on the Canvas
+[ no ] Feature 4 - Include prompt() to Get Info From User
+[ no ] Feature 5 - KeyPressed Feature
 -->
 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Unit 13 Project</title>
+    <meta name="viewport" content="width=device-width" />
+    <title>Unit 11 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+    <style></style>
   </head>
+
   <body>
-    <h1> Quiz All About Tallulah </h1>
-   
-    <hr />
-    <!-- Movie Question -->
-    <form id="movie-form">
-      <label>
-        🎥 What is my favorite movie?
-        <select id="movie-answer">
-          <option value="movie1 ">Pitch Perfect</option>
-          <option value="movie2">Hairspray</option>
-          <option value="movie3">Aquamarine</option>
-          <option value="movie4">The Notebook</option>
-        </select>
-      </label>
-      <button type="submit">Check Movie Answer</button>
-    </form>
-    <div id="movie-result"></div>
-    
-<!--     <img src= "https://media.npr.org/assets/img/2015/05/11/5706_d040_00225_0198rv2_comp_cropv2_wide-127a09569d2c55faf64c9745a05363819da44879.jpg?s=1100&c=50&f=jpeg"
-          width= "210"
-         id= "PitchPerfect-pic"
-         style= "display:none">  -->
-    
-  
-    <hr />
-    <!-- Book Question -->
-    <form id="food-form">
-      <label>
-        🥑 What is my favorite Food?
-        <select id="food-answer">
-          <option value="Sushi">Sushi</option>
-          <option value="Pizza">Pizza</option>
-          <option value="Pasta">Pasta</option>
-          <option value="Chicken Tenders">Chicken Tenders</option>
-        </select>
-      </label>
-      <button type="submit">Check Fav Food Answer</button>
-    </form>
-    <div id="food-result"></div>
-    
-<!--     <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg"
-          width= "210"
-         id= "Sushi-pic"
-         style= "display:none">  -->
-    
-<!--     <style> 
-      .declaration { 
-      font: 20px Cursive;
-      }
-    </style> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-      
-      }
-      //Movie Question jQuery Code
-      $("#movie-form").on("submit", function (event) {
-        event.preventDefault();
-
-        var $answer = $("#movie-answer");
-        var answer = $answer.val();
-
-        if (answer === "movie1") {
-          $("#movie-result").text("U R CORRECT!");
-        } else {
-          $("#movie-result").text("Try Again!");
-        }
-      });
-
-//       //Book Question jQuery Code
-//       $("#food-form").on("submit", function (event) {
-//         event.preventDefault();
-
-//         var $answer = $("#food-answer");
-//         var answer = $answer.val();
-
-//         if (answer === "food1") {
-//           $("#food-result").text("U R CORRECT!");
-//         } else {
-//           $("#food-result").text("Try Again!");
-//         }
-//       });
-      
-//       $("#PitchPerfect-pic").slideDown( 1000)
-     
-    </script>
+    <div class="container">
+      <div>
+        <h2 id="end">🐝👒🌸🌼🌞🐰 | My Favorite Season Is Spring!  </h2>
+        <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
+      </div>
+    </div>
   </body>
-
-  <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
 </html>
+
+<!--- Taken From Khan Academy Intro to JS: Drawing & Animation --->

@@ -1,27 +1,47 @@
-#movie-result {
-  background: rgb(255, 182, 193);
-  border: 5px solid black;
-  font-size: 24px;
-  height: 160px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+body {
+  background-color: MistyRose;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+/*   margin-top: 10%; */
+  font-family: Georgia, serif;
 }
 
-#food-result {
-  background: rgb(255, 182, 193);
-  border: 5px solid black;
-  font-size: 24px;
-  font-family: cursive; 
-  height: 160px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+html{
+  height: 100%;
+  width: 100%;
 }
-/* .photo { 
-width: 200px 
-margin: 20px
-border: 5px solid lightblue; 
-padding: 5px } */
-hr {
-  height: 5px;
-  background-color: grey;
+
+#myCanvas {
+  border: 1px solid light yellow;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: MistyRose;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.pic{
+  height: 450px;
+  width: 600px;
+  object-fit: cover;
+  border: 1px solid white;
+}
+
+h2{
+  color: green;
+/*   font-size: 10px; */
+}
+
+#start{
+  text-align: left;
+}
+
+#end{
+  text-align: right;
 }
