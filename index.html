@@ -1,63 +1,112 @@
-<!-- Unit 12 Project
+<!-- Unit 13 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
+[  ] Two Interactive Drop-down Inputs 
+[  ] Two Different jQuery Animation Methods 
 [  ] Add Five CSS Declarations
 [  ] Include Three Images
 
-Select ONE Additional 
-[ no ] Feature 1 - Use .addClass() method
-[ no ] Feature 2 - Use a variable in javaScript 
-[ no ] Feature 3 - Use .mouseover() method
-[ no ] Feature 4 - Use .show() method
-[ no ] Feature 5 - Use .append() method
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Google Font
+[ no ] Feature 2 - Upload a Font
+[ no ] Feature 3 - .mouseover() Method
+[ no ] Feature 4 - :hover Feature 
+[ no ] Feature 5 - Add an Additional Interactive Drop-down
 -->
-
 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Unit 12 Project</title>
+    <title>Unit 13 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <ol>
-      <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
-      </li>
-
-      <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
-      </li>
-
-      <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
-      </li>
-    </ol>
-
+    <h1> Quiz All About Tallulah </h1>
+   
+    <hr />
+    <!-- Movie Question -->
+    <form id="movie-form">
+      <label>
+        🎥 What is my favorite movie?
+        <select id="movie-answer">
+          <option value="movie1 ">Pitch Perfect</option>
+          <option value="movie2">Hairspray</option>
+          <option value="movie3">Aquamarine</option>
+          <option value="movie4">The Notebook</option>
+        </select>
+      </label>
+      <button type="submit">Check Movie Answer</button>
+    </form>
+    <div id="movie-result"></div>
+    
+<!--     <img src= "https://media.npr.org/assets/img/2015/05/11/5706_d040_00225_0198rv2_comp_cropv2_wide-127a09569d2c55faf64c9745a05363819da44879.jpg?s=1100&c=50&f=jpeg"
+          width= "210"
+         id= "PitchPerfect-pic"
+         style= "display:none">  -->
+    
+  
+    <hr />
+    <!-- Book Question -->
+    <form id="food-form">
+      <label>
+        🥑 What is my favorite Food?
+        <select id="food-answer">
+          <option value="Sushi">Sushi</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Pasta">Pasta</option>
+          <option value="Chicken Tenders">Chicken Tenders</option>
+        </select>
+      </label>
+      <button type="submit">Check Fav Food Answer</button>
+    </form>
+    <div id="food-result"></div>
+    
+<!--     <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg"
+          width= "210"
+         id= "Sushi-pic"
+         style= "display:none">  -->
+    
+<!--     <style> 
+      .declaration { 
+      font: 20px Cursive;
+      }
+    </style> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+      
+      }
+      //Movie Question jQuery Code
+      $("#movie-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#movie-answer");
+        var answer = $answer.val();
+
+        if (answer === "movie1") {
+          $("#movie-result").text("U R CORRECT!");
+        } else {
+          $("#movie-result").text("Try Again!");
+        }
       });
 
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-      });
+//       //Book Question jQuery Code
+//       $("#food-form").on("submit", function (event) {
+//         event.preventDefault();
 
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-      });
+//         var $answer = $("#food-answer");
+//         var answer = $answer.val();
+
+//         if (answer === "food1") {
+//           $("#food-result").text("U R CORRECT!");
+//         } else {
+//           $("#food-result").text("Try Again!");
+//         }
+//       });
+      
+//       $("#PitchPerfect-pic").slideDown( 1000)
+     
     </script>
   </body>
-</html>
 
-<!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
+  <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
+</html>
