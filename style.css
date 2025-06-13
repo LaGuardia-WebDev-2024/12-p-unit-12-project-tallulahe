@@ -1,14 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
-
-html {
-  background-color: white;
-  padding-left: 20px;
+#movie-result {
+  background: rgb(255, 182, 193);
+  border: 5px solid black;
+  font-size: 24px;
+  height: 160px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-img{
-  border-radius: 30px;
+#food-result {
+  background: rgb(255, 182, 193);
+  border: 5px solid black;
+  font-size: 24px;
+  font-family: cursive; 
+  height: 160px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-
-h1 {
-  font-family: "Poetsen One", sans-serif;
+/* .photo { 
+width: 200px 
+margin: 20px
+border: 5px solid lightblue; 
+padding: 5px } */
+hr {
+  height: 5px;
+  background-color: grey;
 }
