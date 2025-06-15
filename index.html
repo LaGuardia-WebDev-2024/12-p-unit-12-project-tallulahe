@@ -1,37 +1,122 @@
-<!-- Unit 11 Project
+<!-- Unit 12 Project
 Requirements
-[  ] Three New Arrays
-[  ] One New Loop
-[  ] Custom Function
-[  ] Three new HTML elements/CSS Declarations
+[  ] $() Select by Element, ID AND Class 
+[  ] Use Three Different jQuery Methods 
+[  ] Add Five CSS Declarations
+[  ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Array of Colors
-[ no ] Feature 2 - Add to an Array using .push()
-[ no ] Feature 3 - Image on the Canvas
-[ no ] Feature 4 - Include prompt() to Get Info From User
-[ no ] Feature 5 - KeyPressed Feature
+[ no ] Feature 1 - Use .addClass() method
+[ no ] Feature 2 - Use a variable in javaScript 
+[ no ] Feature 3 - Use .mouseover() method
+[ no ] Feature 4 - Use .show() method
+[ no ] Feature 5 - Use .append() method
 -->
+
 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Unit 11 Project</title>
+    <title>Unit 12 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-    <style></style>
   </head>
-
   <body>
-    <div class="container">
-      <div>
-        <h2 id="end">🐝👒🌸🌼🌞🐰 | My Favorite Season Is Spring!  </h2>
-        <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
-      </div>
-    </div>
+     <script 
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+    <script> 
+      $("li").text("Top"); 
+      $("#page-heading"). text ("My Top 3 Memories of This Year")
+      $("memories").text("Top")
+       <script 
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+
+    <script> 
+      $("li").text("Top"); 
+      $("#page-heading"). text ("My Top 3 Memories of This Year")
+      $("memories").text("Top")
+      
+    </script>
+    
+    </script>
+    
+    <button id="mem1-button">Memory #1</button>
+    <button id="mem2-button">Memory #2</button>
+    <button id="mem3-button">Memory #3</button>
+    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <ol>
+      <li>
+        <h3 id="mem1">Getting Into College </h3>
+        <p>I still remember the exact moment and overpowering sense of relief when getting into my dream school. 
+        I never thought I would be able to do it, so I was shocked and beyond grateful. This is what I had been 
+        working up to throughout highschool, and what I had been in immense stress about. So this was my top memory.</p>
+        <img
+             src="https://cdn.glitch.global/5dbfd588-b81b-4c0e-83ea-df427211821b/25D6498E-0C09-4137-805B-40DEFD63291E_1_105_c.jpeg?v=1749999515937" 
+             alt="Getting Into My Dream School"
+             width="200"
+             > 
+      </li>
+
+      <li>
+        <h3 id="mem2">Senior Memories</h3>
+        <p> Senior year was such a blast! I enjoyed making new memories, which will be my final memories of highschool! 
+          From swim team, to spirit week, to coding classes! I enjoyed every minute! Well most minutes... take a good few off.</p>
+        <img 
+             src="https://cdn.glitch.global/5dbfd588-b81b-4c0e-83ea-df427211821b/14263EE2-076B-438A-B90E-BCA330292890_1_105_c.jpeg?v=1749999915112"
+             alt="senior mems"
+             Width="200"
+             >
+      </li>
+
+      <li>
+        <h3 id="mem3">Hiking Trip In The Rockies!</h3>
+        <p>I did a 10 day hiking trip through the Rockies with Outward Bound. Some of, if not the most beautiful views I have every seen 
+        were on this trip. We (a group of 12 teenagers) hiked all day, set up tarps at night. I had a few scary encounters, given we had to 
+        sleep solo one night, but the stars made up for everything! </p>
+        <img
+             src="https://cdn.glitch.global/5dbfd588-b81b-4c0e-83ea-df427211821b/IMG_0590.jpeg?v=1750000147964"
+        alt="hiking"
+        width="200"
+        >
+      </li>
+    </ol>
+
+    <script>
+      $("#mem1-button").click(function() {
+        $("#mem1").css("color", "purple"); 
+      }); 
+      $("mem2-button").click(function (){
+        $("#mem2").css("color","blue");
+      }); 
+        $("#mem3-button").click(function(){
+        $("#mem3").css("color", "green");
+        $("#mem3").text("coding Parties!")
+        }); 
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $("#mem1-button").click(function () {
+        $("#mem1").css("color", "purple");
+      });
+
+      $("#mem2-button").click(function () {
+        $("#mem2").css("color", "blue");
+      });
+
+      $("#mem3-button").click(function () {
+        $("#mem3").css("color", "green");
+      });
+    </script> 
+   <script> 
+     Var newH1 = $("<h1");
+     newH1. text ("My Top 3 Memories of This Year");
+     newH1. addClass ("Top");
+     $("body").append (newH1);
+     
+  </script>
   </body>
 </html>
 
-<!--- Taken From Khan Academy Intro to JS: Drawing & Animation --->
+<!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
