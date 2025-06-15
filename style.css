@@ -1,47 +1,29 @@
-body {
-  background-color: MistyRose;
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jersey+15&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet");
+
+
+html {
+  background-color: pink;
+  padding-left: 20px;
+}
+top{
+  color: purple;
   text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-/*   margin-top: 10%; */
-  font-family: Georgia, serif;
 }
 
-html{
-  height: 100%;
-  width: 100%;
+img{
+  border-radius: 40px;
+  color:black 
 }
+<style>
 
-#myCanvas {
-  border: 1px solid light yellow;
+h1 {
+  font-family: "Jersey 15", sans-serif;
 }
-
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: MistyRose;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-bottom: 20px;
+Font
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-.pic{
-  height: 450px;
-  width: 600px;
-  object-fit: cover;
-  border: 1px solid white;
-}
-
-h2{
-  color: green;
-/*   font-size: 10px; */
-}
-
-#start{
-  text-align: left;
-}
-
-#end{
-  text-align: right;
-}
+ 
+.
